@@ -20,14 +20,14 @@ public static int subseqLength(int[] someArray){
 	for(int i : someArray){	
 		
 		if(prev <= i){
-			//System.out.println(someArray[i]+" is more than: "+prev);
+			//System.out.println(i+" is more than: "+prev);
 			temp_seq = temp_seq + 1;
 		}else {
 			if( temp_seq > longest){
 			longest = temp_seq;
 			}
 			temp_seq = 1;
-			//System.out.println(someArray[i]+" is less than: "+prev);
+			//System.out.println(i+" is less than: "+prev);
 		}
 		prev = i;
 	}
